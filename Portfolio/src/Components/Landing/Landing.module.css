@@ -1,0 +1,82 @@
+.body{
+    /* background-image: url('../../assets/background.webp'); */
+    height: 100vh;
+    
+ 
+}
+.top{
+    display: flex;
+    height: 70%;
+    width: 100%;
+}
+.left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.left p{
+    margin-left: 5%;
+}
+.Name{
+    font-size: 120px;
+    margin: 0px;
+    font-weight: 700;
+    color: var(--text);
+}
+.subName{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+
+.right{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.right img{
+    width: 60%;
+    height: 60%;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+}
+.bottom_head{
+    font-size: 40px;
+    width: 70%;
+}
+.bottom :nth-child(2){
+    width: 70%;
+    font-size: 12px;
+    word-spacing: 2px;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .body{
+        height: 100%;
+        padding-bottom: 50px;
+    }
+    .Name{
+        font-size: 40px;
+    }
+    .subName{
+        font-size: 20px;
+    }
+    .top{
+        flex-direction: column;
+        gap: 30px;
+        height: 40%;
+        margin-bottom: 50px;
+    }
+  }

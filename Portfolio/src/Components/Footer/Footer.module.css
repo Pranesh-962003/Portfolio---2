@@ -1,0 +1,100 @@
+.body{
+   
+    background-color: var(--back);
+    padding-bottom: 20px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 5% 0 5%;
+    height: 20%;
+}
+.top i{
+    font-size: 40px;
+}
+.btm_left{
+    width: 100%;
+    margin: 5% 5% 0 5%;
+    font-size: 100px;
+    font-weight: 900;
+}
+.btm_left p{
+    color: var(--text);
+}
+
+.bottom{
+    display: flex;
+    height: 80%;
+    width: 100%;
+}
+
+
+.btm_right{
+    height: 400px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btm_wrapper{
+    height: 200px;
+    width: 200px;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "s s s"
+    "l l l"
+
+    ;
+    
+    border: 1px solid var(--text);
+  border-radius: 50%;
+  place-items: center;
+}
+
+
+.btm_wrapper i{
+    font-size: 40px;
+    color: white;
+}
+.btm_wrapper p{
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: rgb(34, 45, 54);
+    padding: 0 15px;
+}
+.btm_curve_top{
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.btm_middle{
+    grid-area: s;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.btm_last{
+    grid-area: l;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 780px){
+    .btm_left{
+        font-size: 60px;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+}
